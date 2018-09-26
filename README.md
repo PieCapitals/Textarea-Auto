@@ -1,1 +1,2 @@
-# Textarea-Auto
+# Textarea Size Auto with Image Background
+
