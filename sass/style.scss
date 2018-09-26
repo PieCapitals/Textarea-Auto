@@ -1,0 +1,84 @@
+/*
+ * Material Design for Textarea
+ * Version: 0.0.0.1
+ *
+ * Author: Anaelmarlon Luzayamo Ngweni
+ * Bachelor degree in computer sciences
+ * Country: US, Michigan city, Grand rapids
+ * Github: amarlon
+ * Contact: marlonluzayamo@gmail.com
+ */
+
+ body{
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #f9f9f9;
+}
+
+img{
+    border-radius: 50% !important;
+    margin-bottom: 5px;
+}
+.textareaInactif{
+    outline: 0px !important;
+    -webkit-appearance:none;
+    box-shadow:none !important;
+}
+.textareaDiv{
+    background: white;
+    top: 100px;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    border-radius: 2px;
+    h4{
+        text-align: center;
+        margin-top:30px;
+        
+    }
+}
+.textarea2{
+    border: none;
+    resize: none;
+    overflow: hidden;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    outline:0px !important;
+    -webkit-appearance:none;
+    min-height: 100px !important;
+    box-shadow:none !important;
+ 
+    &:active{
+        @extend .textareaInactif;
+    }
+    &:hover{
+        @extend .textareaInactif;;
+ 
+    
+    }
+    &:focus{
+        @extend .textareaInactif;
+ 
+    }
+}
+.textareaUl{
+    position: relative;
+    li{
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%); 
+        &:hover{
+            -webkit-filter: none; 
+            transition: all 0.5s linear;
+            opacity: 0.9;
+        }
+    }
+   
+}
